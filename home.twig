@@ -12,16 +12,7 @@
             {{widget('extendednavigation', 'navigationheader', {"align":"right"})|raw}}
         </div>
     </header>
-	{{widget('responsiveslideshow', 'thisunqiuewidgetname', 
-	{'duration':'3', 'transSpeed': '1000', 'transType': 'fade', 'showButtons': true, 'showBullets': false, 'allowPause': true, 'allowLoop': true, 'images':
-	[
-	{'imageHeight':'548', 'imageWidth':'1024', 'url':asset('/images/feature-bg-1.jpg'), 'title':'Slide 1', 'description': 'This is Slide 1'},
-	{'imageHeight':'548', 'imageWidth':'1024', 'url':asset('/images/feature-bg-2.jpg'), 'title':'Slide 2', 'description': 'This is Slide 2'},
-	{'imageHeight':'548', 'imageWidth':'1024', 'url':asset('/images/feature-bg-3.jpg'), 'title':'Slide 3', 'description': 'This is Slide 3'},{'imageHeight':'350', 'imageWidth':'300', 'url':'http://placehold.it/350x300', 'title':'test title', 'description': 'test desc'}
-	]
-	})|raw}}
-
-    
+    {{widget('feature', 'thisunqiuewidgetname', {"header": "profile", "strapline":"profile", "buttonText":"Lorem Ipsum","defaultBgImg": asset('images/feature-bg.jpg'), 'positionTopPercentage': '0','showBtn': true})|raw}}
 </section>
 
 <section class="bk-section wrapper">
