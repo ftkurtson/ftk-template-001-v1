@@ -7,7 +7,13 @@
     <section class="bk-section">
         <header class="bk-header">
             <div class="header-wrapper clearfix">
-               {{widget('feature', 'thisunqiuewidgetname', {"header": "profile", "strapline":"profile", "buttonText":"Lorem Ipsum","defaultBgImg": asset('images/feature-bg.jpg'), 'positionTopPercentage': '0','showBtn': true})|raw}}
+                <div class="companyheader">
+                    {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
+                    {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
+                </div>
+                {{widget('extendednavigation', 'navigationheader', {"align":"right"})|raw}}
+            </div>
+			{{widget('feature', 'thisunqiuewidgetname', {"header": "profile", "strapline":"profile", "buttonText":"Lorem Ipsum","defaultBgImg": asset('images/feature-bg.jpg'), 'positionTopPercentage': '0','showBtn': true})|raw}}
         </header>
     </section>
 
